@@ -1,2 +1,3 @@
 config/local.neon
+config/config.neon
 .env

@@ -19,7 +19,11 @@
 		"nette/utils": "^4.0",
 		"latte/latte": "^3.0",
 		"tracy/tracy": "^2.9",
-		"doctrine/orm": "^2.16"
+		"symfony/cache": "^5.0",
+		"nettrine/migrations": "^0.9.1",
+		"nettrine/orm": "^0.8.4",
+		"nettrine/dbal": "^0.8.2",
+		"contributte/console": "^0.9.3"
 	},
 	"require-dev": {
 		"nette/tester": "^2.4",
