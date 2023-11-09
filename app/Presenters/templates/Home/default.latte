@@ -1,4 +1,17 @@
-{* This is the welcome page, you can delete it *}
+{* 
+{block content}
+    <h1>Test pripojenia k databáze</h1>
+    {if isset($message.success)}
+        <div class="alert alert-success" role="alert">
+            {$message.success}
+        </div>
+    {/if}
+    {if isset($message.error)}
+        <div class="alert alert-danger" role="alert">
+            {$message.error}
+        </div>
+    {/if}
+{/block} *}
 
 {block content}
 <div id="banner">
@@ -12,6 +25,8 @@
 	If you are exploring Nette for the first time, you should read the
 	<a href="https://doc.nette.org/quickstart">Quick Start</a>, <a href="https://doc.nette.org">documentation</a>,
 	<a href="https://blog.nette.org">blog</a> and <a href="https://forum.nette.org">forum</a>.</p>
+
+	<a href="">TEST ROUTE</a>
 
 	<h2>We hope you enjoy Nette!</h2>
 </div>

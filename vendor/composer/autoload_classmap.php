@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
     'Latte\\Attributes\\TemplateFilter' => $vendorDir . '/latte/latte/src/Latte/attributes.php',
     'Latte\\Attributes\\TemplateFunction' => $vendorDir . '/latte/latte/src/Latte/attributes.php',
     'Latte\\Bridges\\Tracy\\BlueScreenPanel' => $vendorDir . '/latte/latte/src/Bridges/Tracy/BlueScreenPanel.php',
