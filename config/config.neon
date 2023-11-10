@@ -1,0 +1,25 @@
+includes:
+    - doctrine.neon
+    - eshops.neon
+
+parameters:
+    autowire: true
+    wwwDir: %appDir%/www
+
+extensions:
+    nettrine.migrations: Nettrine\Migrations\DI\MigrationsExtension
+    console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+        
+services:
+    - App\Eshops\EshopManager
+    EshopModel: App\Model\EshopModel
+
+tracy:
+	maxLength: 150
+	maxDepth: 10
+	keysToHide: [password, pass]
+	dumpTheme: dark
+	showLocation: true
+
+nettrine.migrations:
+    directory: %appDir%/Database/Migrations

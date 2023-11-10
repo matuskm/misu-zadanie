@@ -6,6 +6,8 @@ namespace App;
 
 use Nette\Bootstrap\Configurator;
 
+// Helpers functions
+require __DIR__ . '/Helpers/helpers.php';
 
 class Bootstrap
 {
