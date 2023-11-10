@@ -1,0 +1,4 @@
+services:
+    Eshop1Handler: App\Eshops\Handler\Eshop1Handler(%wwwDir%) # name: Fiktivny eshop
+    Eshop2Handler: App\Eshops\Handler\Eshop2Handler(%wwwDir%) # name: Neexistujuci eshop
+    Eshop3Handler: App\Eshops\Handler\Eshop3Handler(%wwwDir%) # name: NoName eshop

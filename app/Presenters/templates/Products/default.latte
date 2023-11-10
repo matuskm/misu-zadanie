@@ -1,0 +1,11 @@
+{foreach $eshops_data as $eshop}
+    {foreach $eshop as $product}
+
+        <div>
+            <p>Name: {$product['name']}</p>
+            <p>Price: {$product['price']}</p>
+            <p>EAN: {$product['ean']}</p>
+        </div>
+        <hr>
+    {/foreach}
+{/foreach}
