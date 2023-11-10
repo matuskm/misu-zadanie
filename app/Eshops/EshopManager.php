@@ -11,13 +11,13 @@ class EshopManager
 {
     private $container;
     protected $eshop_model;
-    protected $entity_manager;
+    protected $entityManager;
 
-    public function __construct( Container $container, EshopModel $eshop_model, EntityManagerDecorator $entity_manager )
+    public function __construct( Container $container, EshopModel $eshop_model, EntityManagerDecorator $entityManager )
     {
         $this->container = $container;
         $this->eshop_model = $eshop_model;
-        $this->entity_manager = $entity_manager;
+        $this->entityManager = $entityManager;
     }
 
     /**
@@ -25,7 +25,7 @@ class EshopManager
      */
     private function checkExistsEshop( array $eshop_data )
     {
-        $repository = $this->entity_manager->getRepository( EshopModel::class );
+        $repository = $this->entityManager->getRepository( EshopModel::class );
         $eshop = $repository->findOneBy([
             'name'      => $eshop_data['eshop_name'],
             'eshop_url' => $eshop_data['eshop_url'],
@@ -68,8 +68,8 @@ class EshopManager
 
         $eshop = new EshopModel();
         $eshop->setEshopData( $eshop_data );
-        $this->entity_manager->persist( $eshop );
-        $this->entity_manager->flush();
+        $this->entityManager->persist( $eshop );
+        $this->entityManager->flush();
 
         return $eshop->getId();
     }

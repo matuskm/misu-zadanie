@@ -15,22 +15,27 @@ class EshopModel
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue
      */
-    private $id;
+    protected $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $name;
+    protected $name;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $eshop_url;
+    protected $eshop_url;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $feed_url;
+    protected $feed_url;
+
+    /**
+     * @ORM\OneToMany(targetEntity="ProductModel", mappedBy="eshop", fetch="EAGER")
+     */
+    protected $products;
 
     /**
      * Getters
