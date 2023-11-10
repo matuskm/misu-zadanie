@@ -23,7 +23,8 @@
 		"nettrine/migrations": "^0.9.1",
 		"nettrine/orm": "^0.8.4",
 		"nettrine/dbal": "^0.8.2",
-		"contributte/console": "^0.9.3"
+		"contributte/console": "^0.9.3",
+		"doctrine/orm": "^2.16"
 	},
 	"require-dev": {
 		"nette/tester": "^2.4",

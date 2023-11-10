@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Model
  * @ORM\Table(name="products")
  */
-class Product
+class ProductModel
 {
     /**
      * @ORM\Id
